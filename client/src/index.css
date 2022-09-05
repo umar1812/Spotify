@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: sans-serif;
+}
+
+input {
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  padding: 0;
+  margin: 0;
+}
+
+/* ........Login/Registration.......... */
+#outermost {
+  background-image: url(./images/bg.jpg);
+  height: 100vh;
+  background-size: cover;
+
+}
+
+#outermost h3 {
+  margin: 0;
+}
+
+.blur {
+  backdrop-filter: blur(5px);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  width: 40vw;
+  height: 50vh;
+  box-shadow: 0 0 90px rgba(255, 255, 255, 0.322);
+  border-radius: 35px;
+  background-color: rgba(0, 0, 0, 0.459);
+}
+
+.form h3 {
+  color: rgba(252, 240, 240, 0.822);
+  font-style: oblique;
+  font-size: x-large;
+}
+
+.form input {
+  border: none;
+  background-color: rgba(255, 255, 255, 0.123);
+  margin-bottom: 5vh;
+  height: 4vh;
+  width: 20vw;
+  border-bottom: 2px solid purple;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 0 9px rgba(0, 0, 0, 0.568);
+  color: rgba(255, 255, 255, 0.637);
+}
+
+.form input::placeholder {
+  color: rgba(255, 255, 255, 0.637);
+  font-style: italic;
+  font-weight: 600;
+}
+
+.form a {
+  color: rgba(252, 240, 240, 0.644);
+  font-size: medium;
+}
+
+.form p {
+  margin: 0 0 5px;
+  color: rgba(252, 240, 240, 0.644);
+}
+
+.form button {
+  background-color: rgb(153, 0, 153);
+  border: none;
+  font-weight: 600;
+  color: rgba(252, 240, 240, 0.822);
+  width: 8vw;
+  height: 15%;
+  border-radius: 15px;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.781);
+}
+
+.form button:hover {
+  box-shadow: none;
+  background-color: rgba(252, 240, 240, 0.822);
+  color: rgb(153, 0, 153);
+}
+
+#reginput,
+#reginput2,
+#reginput3 {
+  margin-bottom: 2vh;
+}
+
+#anchor {
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: medium;
+}
+
+#anchor2 {
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: medium;
+}
+
+button:disabled {
+  background-color: grey;
+}
+
+button:disabled:hover {
+  background-color: grey;
+  color: rgba(252, 240, 240, 0.822);
+}
+
+/* ......Homepage........ */
+.homeMain {
+  background-color: black;
+  color: white;
+}
+
+.spacebtw {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 5px;
+
+}
+
+#AddIcon {
+  font-size: x-large;
+}
+
+#AddButton {
+  font-size: medium;
+  height: max-content;
+  width: fit-content;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 1vw;
+}
+
+#head {
+  background-color: #19a048;
+}
