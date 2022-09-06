@@ -138,8 +138,14 @@ button:disabled:hover {
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 5px;
+  padding-left: 1%;
+  padding-right: 1%;
 
 }
+
+/* .forPadding {
+  padding: 1%;
+} */
 
 #AddIcon {
   font-size: x-large;
@@ -147,13 +153,86 @@ button:disabled:hover {
 
 #AddButton {
   font-size: medium;
-  height: max-content;
-  width: fit-content;
+  height: 6vh;
+  width: 8vw;
   margin-top: auto;
   margin-bottom: auto;
   margin-right: 1vw;
+  background-color: #19a048;
+  box-shadow: 0px 0px 2px 2px #19a048;
+  border-radius: 10px;
+}
+
+#AddButton:hover {
+  border: none;
+  box-shadow: none;
 }
 
 #head {
   background-color: #19a048;
+}
+
+table {
+  width: 100%;
+}
+
+.songTable {
+  border-spacing: 10px 2vh;
+}
+
+.row {
+  box-shadow: 0px 0px 2px 2px #19a048;
+}
+
+.heads {
+  width: 18vw;
+  text-align: center;
+  height: 5vh;
+  font-size: large;
+}
+
+.song {
+  width: 18vw;
+  text-align: center;
+  height: 25vh;
+}
+
+.heads2 {
+  width: 23vw;
+  text-align: center;
+  height: 5vh;
+  font-size: large;
+}
+
+.heads3 {
+  text-align: center;
+  height: 5vh;
+  font-size: large;
+}
+
+.artists {
+  width: 23vw;
+  text-align: center;
+  height: 5vh;
+}
+
+.leftpad {
+  margin-left: 1%;
+}
+
+.search {
+  height: 5vh;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 15vw;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(0, 0, 0);
+  padding-left: 1vw;
+  color: #19a048;
+}
+
+.row img {
+  height: 120%;
+  width: 100%;
 }

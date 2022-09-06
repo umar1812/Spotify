@@ -120,6 +120,7 @@ router.post('/songs/post', async (req, res) => {
             song: req.body.song,
             artist: req.body.artist,
             release: req.body.release,
+            artwork: req.body.artwork
         })
         const newSong = await createSong.save()
         res.status(201).send(newSong)

@@ -42,6 +42,18 @@ const AddSong = () => {
         setSong({ ...newSong, artwork: imgPath })
     }
 
+    let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December",];
+    const saveDate = (e) => {
+        let date = e.target.value
+        let newDate = date.split("-")
+        let temp = newDate[0];
+        newDate[0] = newDate[2]
+        newDate[2] = temp
+        newDate[1] = months[newDate[1] - 1]
+        newDate = newDate.join(" ")
+        setSong({ ...newSong, release: newDate })
+    }
+
     const saveInput = (e) => {
         let name = e.target.name;
         let value = e.target.value;
@@ -78,7 +90,7 @@ const AddSong = () => {
             <br />
             <span>
                 <label>Date released: </label>
-                <input type="date" name='release' onChange={(e) => { saveInput(e) }} />
+                <input type="date" name='release' onChange={(e) => { saveDate(e) }} />
             </span>
             <br />
             <span>

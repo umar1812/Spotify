@@ -35,41 +35,43 @@ const Home = () => {
         <div className='homeMain'>
             <header className='spacebtw' id='head'>
                 <span><h3>Home</h3></span>
-                <input type="search" placeholder='Search' />
+                <input type="search" placeholder='Search' className='search' />
             </header>
             <div className='spacebtw'>
                 <span><h3>Top 10 Songs</h3></span>
                 <button id='AddButton' onClick={navAddSong}><span id='AddIcon'>+</span>  Add song</button>
             </div>
-            <table>
-                <thead>
-                    <td>Artwork</td>
-                    <td>Song</td>
-                    <td>Date of release</td>
-                    <td>Artists</td>
-                    <td>Rate</td>
-                </thead>
-                <tbody>
-                    {songDetails.map((value) => {
-                        return (
-                            <Songs
-                                artwork={value.artwork}
-                                song={value.song}
-                                release={value.release}
-                                artist={value.artist}
-                            />
-                        )
-                    })}
+            <div className='forPadding'>
+                <table className='songTable'>
+                    <thead className='row'>
+                        <td className='heads'>Artwork</td>
+                        <td className='heads'>Song</td>
+                        <td className='heads'>Date of release</td>
+                        <td className='heads'>Artists</td>
+                        <td className='heads'>Rate</td>
+                    </thead>
+                    <tbody>
+                        {songDetails.map((value) => {
+                            return (
+                                <Songs
+                                    artwork={value.artwork}
+                                    song={value.song}
+                                    release={value.release}
+                                    artist={value.artist}
+                                />
+                            )
+                        })}
 
-                </tbody>
-            </table>
+                    </tbody>
+                </table>
+            </div>
             <br />
-            <h3>Top 10 Artists</h3>
-            <table>
-                <thead>
-                    <td>Artists</td>
-                    <td>Date of Birth</td>
-                    <td>Song</td>
+            <h3 className='leftpad'>Top 10 Artists</h3>
+            <table className='songTable'>
+                <thead className='row'>
+                    <td className='heads2'>Artists</td>
+                    <td className='heads2'>Date of Birth</td>
+                    <td className='heads3'>Song</td>
                 </thead>
                 <tbody>
                     {artistsDetails.map((value) => {
@@ -84,7 +86,7 @@ const Home = () => {
 
             </table>
 
-        </div>
+        </div >
     )
 }
 

@@ -12,7 +12,6 @@ const AddArtist = () => {
         bio: ""
     })
 
-    // const [date, setDate] = useState("")
     const saveDate = (e) => {
         let date = e.target.value
         console.log(date)
