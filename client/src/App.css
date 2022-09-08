@@ -2,37 +2,167 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mainDivSongs {
+  text-align: center;
+  background-color: black;
+  color: white;
+  height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.mainDivSongs h2 {
+  background-color: #19a048;
+  height: 7vh;
+  margin: 0;
+  padding-top: 1.4%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.box {
+  width: 80%;
+  /* border: 1px solid rgb(255, 255, 255); */
+  margin-left: auto;
+  margin-right: auto;
+  height: 80vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin-top: 5vh;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.innerbox {
+  display: flex;
+  width: 75%;
+  /* border: 1px solid blueviolet; */
+  /* justify-content: space-between; */
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 7vh;
+
+}
+
+.labelclass {
+  width: 28vw;
+}
+
+.box input,
+select {
+  border-radius: 10px;
+  background-color: black;
+  border: none;
+  box-shadow: 0px 0px 2px 2px #19a048;
+  color: #19a048;
+  text-align: center;
+  height: 4vh;
+  width: 20vw;
+}
+
+.box select {
+  margin-right: 2vw;
+}
+
+.AddArtist {
+  font-size: medium;
+  height: 4vh;
+  width: 8vw;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 1vw;
+  background-color: #19a048;
+  box-shadow: 0px 0px 2px 2px #19a048;
+  border-radius: 10px;
+}
+
+.AddArtist:hover {
+  border: none;
+  box-shadow: none;
+}
+
+::-webkit-file-upload-button {
+  display: none;
+}
+
+input[type='file'] {
+  padding-left: 15vh;
+  padding-top: 0.5%;
+  height: 115%;
+  width: 13vw;
+}
+
+.savebtn {
+  margin-right: 2vw;
+  width: 6vw;
+  background-color: #19a048;
+  box-shadow: 0px 0px 2px 2px #ffffffa4;
+  border-radius: 10px;
+  height: 5vh;
+  cursor: pointer;
   color: white;
+  border: none;
+  font-size: medium;
 }
 
-.App-link {
-  color: #61dafb;
+.savebtn:hover {
+  border: none;
+  box-shadow: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cancel {
+  margin-left: 2vw;
+  width: 6vw;
+  border-radius: 10px;
+  height: 5vh;
+  background-color: red;
+  box-shadow: 0px 0px 2px 2px rgba(255, 0, 0, 0.712);
+  border-radius: 10px;
+  color: white;
+  font-size: medium;
+  border: none;
+}
+
+.cancel:hover {
+  box-shadow: none;
+  background-color: red;
+}
+
+/* .............Add artist page .................. */
+.artistdiv {
+  position: absolute;
+  top: 21vh;
+  right: 20vw;
+  height: 65vh;
+  width: 60vw;
+  backdrop-filter: blur(5px);
+  background-color: #000000b6;
+  z-index: 1;
+  box-shadow: 0px 0px 20px 0px #19a048;
+}
+
+.artistdiv input,
+select,
+textarea {
+  border-radius: 10px;
+  background-color: black;
+  border: none;
+  box-shadow: 0px 0px 2px 2px #19a048;
+  color: #19a048;
+  text-align: center;
+  height: 4vh;
+  width: 20vw;
+}
+
+#bio {
+  height: 12vh;
+  text-align: left;
+  padding-left: 2px;
+}
+
+#saveBtn {
+  position: absolute;
+  left: 22vw;
+}
+
+#cancelbtn {
+  position: absolute;
+  right: 42vw;
+  top: 77vh;
+  z-index: 10;
 }

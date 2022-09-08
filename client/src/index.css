@@ -151,7 +151,7 @@ button:disabled:hover {
   font-size: x-large;
 }
 
-#AddButton {
+.AddButton {
   font-size: medium;
   height: 6vh;
   width: 8vw;
@@ -161,9 +161,10 @@ button:disabled:hover {
   background-color: #19a048;
   box-shadow: 0px 0px 2px 2px #19a048;
   border-radius: 10px;
+  cursor: pointer;
 }
 
-#AddButton:hover {
+.AddButton:hover {
   border: none;
   box-shadow: none;
 }

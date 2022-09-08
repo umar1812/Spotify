@@ -79,48 +79,54 @@ const AddSong = () => {
             console.log(err.message)
         }
     }
+    const navback = () => {
+        navigate('/home')
+    }
 
     return (
-        <div>
+        <div className='mainDivSongs'>
+
             <h2>Add a new song</h2>
-            <span>
-                <label>Song name: </label>
-                <input type="text" name='song' onChange={(e) => { saveInput(e) }} />
-            </span>
-            <br />
-            <span>
-                <label>Date released: </label>
-                <input type="date" name='release' onChange={(e) => { saveDate(e) }} />
-            </span>
-            <br />
-            <span>
-                <label>Artwork: </label>
-                <input type="file" onChange={(e) => { handleFile(e) }} />
-            </span>
-            <br />
-            <span>
-                <label>Artists: </label>
-                <select placeholder='Search' name='artist' onChange={(e) => { saveInput(e) }}>
-                    {artistsDetails.map((value) => {
-                        return (
-                            <option value={value.artist}>{value.artist}</option>
-                        )
-                    })}
-                </select>
-                <button onClick={clickin}><span>+</span>Add Artist</button>
-            </span>
-            <br />
-            <span>
-                <button onClick={handleSubmit} >Save</button>
-                <button>Cancel</button>
-            </span>
+            <div className='box'>
+                <span className='innerbox'>
+                    <label className='labelclass'>Song name: </label>
+                    <input type="text" name='song' onChange={(e) => { saveInput(e) }} />
+                </span>
+                <br />
+                <span className='innerbox'>
+                    <label className='labelclass'>Date released: </label>
+                    <input type="date" name='release' onChange={(e) => { saveDate(e) }} />
+                </span>
+                <br />
+                <span className='innerbox'>
+                    <label className='labelclass'>Artwork: </label>
+                    <input type="file" title=' ' onChange={(e) => { handleFile(e) }} />
+                </span>
+                <br />
+                <span className='innerbox'>
+                    <label className='labelclass'>Artists: </label>
+                    <select placeholder='Search' name='artist' onChange={(e) => { saveInput(e) }}>
+                        {artistsDetails.map((value) => {
+                            return (
+                                <option value={value.artist}>{value.artist}</option>
+                            )
+                        })}
+                    </select >
+                    <button className='AddArtist' onClick={clickin}><span>+</span>Add Artist</button>
+                </span>
+                <br />
+                <span>
+                    <button className='savebtn' onClick={handleSubmit} >Save</button>
+                    <button className='cancel' onClick={navback}>Cancel</button>
+                </span>
+            </div>
 
 
             {/* ......................Add artist section........................ */}
             {
                 isClicked && <div>
                     <header>
-                        <button onClick={clickin}>X</button>
+                        <button className='cancel' id='cancelbtn' onClick={clickin}>Cancel</button>
                     </header>
                     <AddArtist />
                 </div>

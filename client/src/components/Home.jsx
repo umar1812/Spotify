@@ -39,7 +39,7 @@ const Home = () => {
             </header>
             <div className='spacebtw'>
                 <span><h3>Top 10 Songs</h3></span>
-                <button id='AddButton' onClick={navAddSong}><span id='AddIcon'>+</span>  Add song</button>
+                <button className='AddButton' onClick={navAddSong}><span id='AddIcon'>+</span>  Add song</button>
             </div>
             <div className='forPadding'>
                 <table className='songTable'>

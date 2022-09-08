@@ -52,24 +52,24 @@ const AddArtist = () => {
     }
 
     return (
-        <div>
-            <span>
-                <label>Artist's name: </label>
+        <div className='artistdiv'>
+            <h2>Add a new artist</h2>
+            <br />
+            <br />
+            <span className='innerbox'>
+                <label className='labelclass' >Artist's name: </label>
                 <input type="text" name='artist' onChange={(e) => { saveInput(e) }} />
             </span>
-            <br />
-            <span>
-                <label>Date of birth: </label>
+            <span className='innerbox'>
+                <label className='labelclass'>Date of birth: </label>
                 <input type="date" name='dob' onChange={(e) => { saveDate(e) }} />
             </span>
-            <br />
-            <span>
-                <label>Bio: </label>
-                <input type="text" name='bio' onChange={(e) => { saveInput(e) }} />
+            <span className='innerbox' >
+                <label className='labelclass'>Bio: </label>
+                <textarea type="text" id='bio' name='bio' onChange={(e) => { saveInput(e) }} />
             </span>
-            <br />
             <span>
-                <button onClick={handleSubmit}>Done</button>
+                <button className='savebtn' id='saveBtn' onClick={handleSubmit}>Done</button>
             </span>
 
         </div>
